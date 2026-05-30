@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koffi Mensah - Expert Fullstack | Africa Freelancer</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        .gig-layout {
+            display: grid;
+            grid-template-columns: 1fr 380px;
+            gap: 40px;
+            margin-top: 40px;
+        }
+        .gallery-main {
+            width: 100%;
+            height: 500px;
+            border-radius: 24px;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+        .gallery-thumbs {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            margin-bottom: 40px;
+        }
+        .thumb {
+            width: 100%;
+            height: 80px;
+            border-radius: 12px;
+            cursor: pointer;
+            object-fit: cover;
+            border: 2px solid transparent;
+            transition: border 0.2s;
+        }
+        .thumb:hover { border-color: var(--primary); }
+        
+        .seller-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            background: #DCFCE7;
+            color: #166534;
+            padding: 4px 12px;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+        .pricing-card {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 24px;
+            padding: 30px;
+            position: sticky;
+            top: 100px;
+            box-shadow: var(--shadow);
+        }
+        .pricing-tabs {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 25px;
+            background: var(--bg-soft);
+            padding: 5px;
+            border-radius: 12px;
+        }
+        .tab {
+            flex: 1;
+            text-align: center;
+            padding: 8px;
+            cursor: pointer;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: all 0.2s;
+        }
+        .tab.active {
+            background: white;
+            color: var(--primary);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .price-tag {
+            font-size: 2rem;
+            font-weight: 800;
+            margin: 20px 0;
+            display: block;
+        }
+        .review-item {
+            padding: 20px 0;
+            border-bottom: 1px solid var(--border);
+        }
+        .rating-stars { color: var(--primary); margin-bottom: 10px; display: block; }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container nav-container">
+            <a href="../index.html" class="logo">
+                <i data-lucide="globe" class="logo-icon"></i> Africa Freelancer
+            </a>
+            <div class="nav-links">
+                <a href="../index.html#services">Explorer</a>
+                <a href="#" class="btn-ghost">Connexion</a>
+                <a href="#" class="btn-primary">S'inscrire</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="nav-links" style="display:flex; gap:10px; margin: 20px 0; font-size: 0.9rem; color: var(--text-muted);">
+            <a href="../index.html" style="text-decoration:none; color: inherit;">Accueil</a> <span>/</span> 
+            <a href="#" style="text-decoration:none; color: inherit;">Développement</a> <span>/</span> 
+            <span>Fullstack Expert</span>
+        </div>
+
+        <div class="gig-layout">
+            <div class="main-content">
+                <h1>Je vais créer votre application SaaS scalable avec Next.js et Tailwind CSS</h1>
+                
+                <div style="display:flex; align-items:center; gap:15px; margin-bottom:30px;">
+                    <img src="https://i.pravatar.cc/150?u=koffi" style="width:50px; height:50px; border-radius:50%;">
+                    <div>
+                        <div style="font-weight:bold; display:flex; align-items:center; gap:5px;">
+                            Koffi Mensah <span class="seller-badge"><i data-lucide="check-circle" style="width:12px; height:12px;"></i> Vérifié</span>
+                        </div>
+                        <div style="font-size:0.85rem; color:var(--text-muted);">⭐ 4.9 (128 avis) • Niveau 2</div>
+                    </div>
+                </div>
+
+                <img src="https://images.unsplash.com/photo-1460925895917-afbe65ae8364?auto=format&fit=crop&q=80&w=800" class="gallery-main">
+                <div class="gallery-thumbs">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afbe65ae8364?auto=format&fit=crop&q=80&w=200" class="thumb">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c524//auto=format&fit=crop&q=80&w=200" class="thumb">
+                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=200" class="thumb">
+                    <img src="https://images.unsplash.com/photo-1551288049-bbb65216f785?auto=format&fit=crop&q=80&w=200" class="thumb">
+                </div>
+
+                <h2 style="margin-bottom:20px;">À propos de ce service</h2>
+                <p style="color:var(--text-muted); margin-bottom:20px;">
+                    Vous avez une idée de produit révolutionnaire ? Je vous aide à transformer votre concept en une plateforme SaaS prête pour la production. Spécialiste du marché africain et global, je combine performance technique et design moderne.
+                </p>
+                <ul style="margin-bottom:40px; color:var(--text-muted); line-height:2;">
+                    <li>✅ Architecture Next.js 14 (App Router)</li>
+                    <li>✅ Design system responsive avec Tailwind CSS</li>
+                    <li>✅ Intégration API Stripe / Paystack pour les paiements</li>
+                    <li>✅ Optimisation SEO et performance (Lighthouse 100)</li>
+                    <li>✅ Déploiement automatisé via Vercel/AWS</li>
+                </ul>
+
+                <h2>Avis des clients</h2>
+                <div class="review-item">
+                    <span class="rating-stars">⭐⭐⭐⭐⭐</span>
+                    <div style="font-weight:600;">Jean-Pierre M. <span style="font-weight:400; color:var(--text-muted); font-size:0.8rem;">(Acheteur)</span></div>
+                    <p style="font-size:0.9rem; color:var(--text-muted);">Travail exceptionnel ! Koffi a compris exactement mes besoins pour mon app de logistique à Abidjan. Livraison rapide et code propre.</p>
+                </div>
+                <div class="review-item">
+                    <span class="rating-stars">⭐⭐⭐⭐⭐</span>
+                    <div style="font-weight:600;">Sarah L. <span style="font-weight:400; color:var(--text-muted); font-size:0.8rem;">(Acheteur)</span></div>
+                    <p style="font-size:0.9rem; color:var(--text-muted);">Une expertise rare. Le design est minimaliste et l'UX est parfaite. Je recommande vivement.</p>
+                </div>
+            </div>
+
+            <div class="side-bar">
+                <div class="pricing-card">
+                    <h3>Mon Offre</h3>
+                    <div class="pricing-tabs">
+                        <div class="tab">Basique</div>
+                        <div class="tab active">Standard</div>
+                        <div class="tab">Premium</div>
+                    </div>
+                    <p style="font-size:0.9rem; color:var(--text-muted); margin-bottom:15px;">
+                        Application complète avec authentification, base de données et déploiement.
+                    </p>
+                    <span class="price-tag">450 €</span>
+                    <button class="btn-primary" style="width:100%; padding:15px; font-size:1.1rem;">Continuer</button>
+                    <div style="text-align:center; margin-top:15px; font-size:0.8rem; color:var(--text-muted);">
+                        Livrable en 14 jours • 3 révisions
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
